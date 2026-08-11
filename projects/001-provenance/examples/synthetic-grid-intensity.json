@@ -1,0 +1,63 @@
+{
+  "document": "Synthetic example: two grid intensity figures and a derived ratio",
+  "note": "SYNTHETIC. The source names, dataset names, versions and figures below are invented for the purpose of showing what a complete record looks like. Nothing here is a real published value and nothing here should be cited. The second record deliberately omits both a URL and a query so that --strict has something to complain about.",
+  "values": [
+    {
+      "name": "grid intensity, country A",
+      "value": 412.0,
+      "unit": "gCO2e/kWh",
+      "lineage": [
+        {
+          "source": "Example Agency (synthetic)",
+          "dataset": "annual-grid-intensity",
+          "version": "2024-edition",
+          "retrieved_at": "2025-03-04T09:14:00Z",
+          "licence": "CC-BY-4.0",
+          "query": {"country": "AA", "year": 2024, "basis": "location"},
+          "url": "https://example.invalid/annual-grid-intensity",
+          "note": "Synthetic figure. Not a real published value."
+        }
+      ]
+    },
+    {
+      "name": "grid intensity, country B",
+      "value": 188.0,
+      "unit": "gCO2e/kWh",
+      "lineage": [
+        {
+          "source": "Example Statistics Office (synthetic)",
+          "dataset": "electricity-emissions",
+          "version": "r3",
+          "retrieved_at": "2023-06-11T22:00:00+02:00",
+          "licence": "ODbL-1.0",
+          "note": "Synthetic figure. Deliberately records no URL and no query, so the report has something to flag."
+        }
+      ]
+    },
+    {
+      "name": "ratio A over B",
+      "value": 2.1914893617021276,
+      "unit": "",
+      "lineage": [
+        {
+          "source": "Example Agency (synthetic)",
+          "dataset": "annual-grid-intensity",
+          "version": "2024-edition",
+          "retrieved_at": "2025-03-04T09:14:00Z",
+          "licence": "CC-BY-4.0",
+          "query": {"country": "AA", "year": 2024, "basis": "location"},
+          "url": "https://example.invalid/annual-grid-intensity",
+          "note": "Synthetic figure. Not a real published value."
+        },
+        {
+          "source": "Example Statistics Office (synthetic)",
+          "dataset": "electricity-emissions",
+          "version": "r3",
+          "retrieved_at": "2023-06-11T22:00:00+02:00",
+          "licence": "ODbL-1.0",
+          "note": "Synthetic figure. Deliberately records no URL and no query, so the report has something to flag."
+        }
+      ]
+    }
+  ]
+}

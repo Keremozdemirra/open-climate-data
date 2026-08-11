@@ -17,11 +17,10 @@ Rules of thumb applied to every item:
 
 ## Done
 
-_nothing yet_
+- [x] **001 — provenance** · Complete retrieval record with a canonical SHA-256 fingerprint, lineage that merges as a set union through arithmetic, UTC-normalised timestamps, and a CLI that reports sources, licences, staleness and missing URLs or queries. 54 tests, no network.
 
 ## Queue
 
-- [ ] **001 — provenance** · The core record every value is wrapped in: source, dataset, version, retrieval timestamp, licence, and the exact query that produced it.
 - [ ] **002 — units** · Normalise units across sources — GJ against MWh, kt against t, CO2 against CO2e — and refuse ambiguous conversions rather than guessing.
 - [ ] **003 — fixtures** · Recording harness: capture a live response once, replay it forever, so tests are deterministic and offline.
 - [ ] **004 — grid-intensity** · Grid carbon intensity by country and, where published, by hour.

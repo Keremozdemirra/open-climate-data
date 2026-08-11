@@ -29,6 +29,12 @@ projects/
     pyproject.toml     dependencies, if any
 ```
 
+## Projects
+
+| # | Project | What it does |
+| --- | --- | --- |
+| 001 | [provenance](projects/001-provenance) | The record every value is wrapped in — source, dataset, version, retrieval instant, licence and the exact query — carried through arithmetic so a derived figure still admits to everything that went into it. |
+
 ## Roadmap
 
 See [BACKLOG.md](BACKLOG.md).

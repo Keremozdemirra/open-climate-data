@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "provenance"
+version = "0.1.0"
+description = "The provenance record every value in open-climate-data is wrapped in: source, dataset, version, retrieval time, licence and the exact query -- carried through arithmetic."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["provenance", "lineage", "climate data", "energy data", "reproducibility", "citation"]
+dependencies = []
+
+[project.scripts]
+provenance = "provenance.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["provenance*"]
