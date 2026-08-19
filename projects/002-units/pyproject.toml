@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "units"
+version = "0.1.0"
+description = "Exact conversion between energy and mass units used across sources -- GJ against MWh, kt against t -- and a refusal, not a guess, when a mass unit's gas species is ambiguous, as with CO2 against CO2e."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["units", "unit conversion", "energy", "emissions", "CO2e", "climate data"]
+dependencies = []
+
+[project.scripts]
+units = "units.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["units*"]
