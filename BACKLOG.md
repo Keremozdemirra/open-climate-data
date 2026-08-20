@@ -18,10 +18,10 @@ Rules of thumb applied to every item:
 ## Done
 
 - [x] **001 — provenance** · Complete retrieval record with a canonical SHA-256 fingerprint, lineage that merges as a set union through arithmetic, UTC-normalised timestamps, and a CLI that reports sources, licences, staleness and missing URLs or queries. 54 tests, no network.
+- [x] **002 — units** · Exact conversion between energy and mass units (GJ against MWh, kt against t) as a rational scale factor, plus a gas-species check on mass units that accepts CO2 against CO2e as identical by definition and refuses every other species pair — CH4 against CO2e, a plain tonne against either — for want of a cited global warming potential. 20 tests, zero dependencies.
 
 ## Queue
 
-- [ ] **002 — units** · Normalise units across sources — GJ against MWh, kt against t, CO2 against CO2e — and refuse ambiguous conversions rather than guessing.
 - [ ] **003 — fixtures** · Recording harness: capture a live response once, replay it forever, so tests are deterministic and offline.
 - [ ] **004 — grid-intensity** · Grid carbon intensity by country and, where published, by hour.
 - [ ] **005 — ets-prices** · EU and UK ETS allowance price series.
@@ -30,3 +30,4 @@ Rules of thumb applied to every item:
 - [ ] **008 — emission-factors** · A factor registry that tracks vintage and supersession, so a restated factor does not quietly change last year's answer.
 - [ ] **009 — cache** · Local caching with explicit expiry, because most of these sources update annually and should not be hit on every run.
 - [ ] **010 — cli** · Fetch and export from the terminal, with provenance included in every output.
+- [ ] **011 — compound-units** · Decompose a compound unit string — a rate like `tCO2e/MWh`, the kind `Cited`'s own multiplication and division already produce — into its atomic parts and convert each with `units.convert`, rather than requiring the caller to do it by hand. `units` (002) deliberately stops at atomic units; this is the gap its own README names.

@@ -1,0 +1,47 @@
+{
+  "document": "Worked example: energy and mass conversions this repository's clients actually need, including two the tool refuses",
+  "conversions": [
+    {
+      "label": "grid intensity source states GJ, model wants MWh",
+      "value": 3.6,
+      "from_unit": "GJ",
+      "to_unit": "MWh"
+    },
+    {
+      "label": "a portal reports MWh, the CLI wants the SI base unit",
+      "value": 1,
+      "from_unit": "MWh",
+      "to_unit": "J"
+    },
+    {
+      "label": "national inventory in kt, a company total in t",
+      "value": 1,
+      "from_unit": "kt",
+      "to_unit": "t"
+    },
+    {
+      "label": "CO2 measured in tonnes stated as CO2e -- exact by definition",
+      "value": 1000,
+      "from_unit": "tCO2",
+      "to_unit": "tCO2e"
+    },
+    {
+      "label": "REFUSED: a plain tonne has no gas species to convert from",
+      "value": 500,
+      "from_unit": "t",
+      "to_unit": "tCO2e"
+    },
+    {
+      "label": "REFUSED: methane to CO2e needs a cited global warming potential",
+      "value": 12.5,
+      "from_unit": "tCH4",
+      "to_unit": "tCO2e"
+    },
+    {
+      "label": "REFUSED: energy and mass are not the same dimension",
+      "value": 1,
+      "from_unit": "MWh",
+      "to_unit": "t"
+    }
+  ]
+}

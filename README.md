@@ -34,6 +34,7 @@ projects/
 | # | Project | What it does |
 | --- | --- | --- |
 | 001 | [provenance](projects/001-provenance) | The record every value is wrapped in — source, dataset, version, retrieval instant, licence and the exact query — carried through arithmetic so a derived figure still admits to everything that went into it. |
+| 002 | [units](projects/002-units) | Exact conversion between energy and mass units — GJ against MWh, kt against t — and a refusal rather than a guess when a mass unit's gas species is ambiguous, as with CO2 against everything but CO2e. |
 
 ## Roadmap
 
