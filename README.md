@@ -1,5 +1,7 @@
 # open-climate-data
 
+[![tests](https://github.com/Keremozdemirra/open-climate-data/actions/workflows/tests.yml/badge.svg)](https://github.com/Keremozdemirra/open-climate-data/actions/workflows/tests.yml)
+
 Public climate and energy data is abundant and almost uniformly painful to
 consume: a dozen portals, a dozen schemas, units that disagree, and figures
 that get silently restated between vintages.
